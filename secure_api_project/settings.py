@@ -133,3 +133,5 @@ PASSWORD_HASHERS = [
     'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
     'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
 ]
+
+FERNET_KEY = "oRAUpErfUME2HZ6arRiUqPduuRCYs-Kidh-yaLXm52k="
