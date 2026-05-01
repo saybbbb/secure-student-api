@@ -1,4 +1,8 @@
 import logging
+from rest_framework import viewsets
+from rest_framework.permissions import IsAuthenticated
+from .models import Payment
+from .serializers import PaymentSerializer
 from django.contrib.auth import authenticate
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
@@ -33,3 +37,22 @@ def login_view(request):
     else:
         logger.warning(f"Failed login attempt for user: {username} from IP: {request.META.get('REMOTE_ADDR')}")
         return JsonResponse({'error': 'Invalid credentials'}, status=401)
+
+
+class PaymentViewSet(viewsets.ModelViewSet):
+    """
+    Secure Payment API endpoint.
+    - Authenticated users can manage their own payments.
+    - All actions are logged.
+    """
+    queryset = Payment.objects.all()
+    serializer_class = PaymentSerializer
+    permission_classes = [IsAuthenticated]
+    def get_queryset(self):
+        return Payment.objects.filter(user=self.request.user)
+    def perform_create(self, serializer):
+        logger.info(f"Payment created by user: {self.request.user.username}")
+        serializer.save(user=self.request.user)
+    def perform_destroy(self, instance):
+        logger.info(f"Payment #{instance.id} deleted by user: {self.request.user.username}")
+        instance.delete()
