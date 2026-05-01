@@ -1,0 +1,15 @@
+[2026-05-01 16:07:28,821] WARNING payments.views Failed login attempt for user: admin_user from IP: 127.0.0.1
+[2026-05-01 16:07:30,149] WARNING payments.views Failed login attempt for user: admin_user from IP: 127.0.0.1
+[2026-05-01 16:07:31,286] WARNING payments.views Failed login attempt for user: admin_user from IP: 127.0.0.1
+[2026-05-01 16:07:32,422] WARNING payments.views Failed login attempt for user: admin_user from IP: 127.0.0.1
+[2026-05-01 16:07:33,522] WARNING payments.views Failed login attempt for user: admin_user from IP: 127.0.0.1
+[2026-05-01 16:07:34,530] WARNING payments.views Failed login attempt for user: admin_user from IP: 127.0.0.1
+[2026-05-01 16:07:35,788] WARNING payments.views Failed login attempt for user: admin_user from IP: 127.0.0.1
+[2026-05-01 16:07:37,013] WARNING payments.views Failed login attempt for user: admin_user from IP: 127.0.0.1
+[2026-05-01 16:07:39,894] WARNING payments.views Failed login attempt for user: admin_user from IP: 127.0.0.1
+[2026-05-01 16:09:32,768] WARNING payments.views Failed login attempt for user: admin_user from IP: 127.0.0.1
+[2026-05-01 16:09:34,050] WARNING payments.views Failed login attempt for user: admin_user from IP: 127.0.0.1
+[2026-05-01 16:09:36,432] WARNING payments.views Failed login attempt for user: admin_user from IP: 127.0.0.1
+[2026-05-01 16:09:37,551] WARNING payments.views Failed login attempt for user: admin_user from IP: 127.0.0.1
+[2026-05-01 16:09:38,423] WARNING payments.views Failed login attempt for user: admin_user from IP: 127.0.0.1
+[2026-05-01 16:09:39,586] WARNING payments.views Failed login attempt for user: admin_user from IP: 127.0.0.1

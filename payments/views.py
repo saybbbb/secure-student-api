@@ -6,7 +6,7 @@ from .serializers import PaymentSerializer
 from django.contrib.auth import authenticate
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
-from ratelimit.decorators import ratelimit
+from django_ratelimit.decorators import ratelimit
 import json
 
 logger = logging.getLogger(__name__)
